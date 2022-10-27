@@ -38,8 +38,24 @@
                             <td>{$aluno['nome']}</td>
                             <td>{$aluno['turno']}</td>
                             <td>{$aluno['inicio']}</td>
-                            <td><input type='submit' class='btn btn-danger' value=apagar></td>
-                            <td></td>
+                            <td>
+                                <button 
+                                    class='btn btn-danger' 
+                                    formaction='editar.php' 
+                                    value='{$aluno['id']}'
+                                    name='Edit'>
+                                    Editar
+                                </button>
+                            </td>
+                            <td>
+                                <button 
+                                    class='btn btn-danger' 
+                                    formaction='apagar.php' 
+                                    value='{$aluno['id']}'
+                                    name='id'>
+                                    Apagar
+                                </button>
+                            </td>
                         </tr>";  
             }   
             ?>
